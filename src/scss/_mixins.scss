@@ -1,0 +1,20 @@
+@mixin row_grid($margin){
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$margin;
+    margin-right: -$margin;
+    @content;
+}
+
+@mixin col_grid($size, $margin, $max_size: 12){
+    width: calc(100% / #{$max_size} * #{$size} - #{$margin} * 2);
+    margin-left: $margin;
+    margin-right: $margin;
+    @content;
+}
+
+@mixin media($res){
+    @media only screen and (max-width: $res){
+        @content;
+    }
+}
