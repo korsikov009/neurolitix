@@ -7,7 +7,7 @@
 }
 
 @mixin col_grid($size, $margin, $max_size: 12){
-    width: calc(100% / #{$max_size} * #{$size} - #{$margin} * 2);
+    width: calc(100%/#{$max_size}*#{$size} - #{$margin}*2);
     margin-left: $margin;
     margin-right: $margin;
     @content;

@@ -5,7 +5,19 @@
 }
 
 @font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
     font-family: "Montserrat";
     font-weight: 800;
     src: url('../fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
 }
