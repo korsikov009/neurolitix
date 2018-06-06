@@ -82,4 +82,41 @@
 		margin-left: -220px;
 		margin-right: -170px;
 	}
+
+	&__separator {
+		@include row_grid(0px);
+		justify-content: space-between;
+		margin-top: 46px;
+	}
+
+	&__line {
+		@include col_grid(23, 0px, 48);
+		height: 1px;
+		background-color: rgba(255,255,255,0.3);
+		position: relative;
+		margin: 4px 0;
+	}
+
+	&__line-point {
+		border-radius: 5px;
+		width: 9px;
+		height: 9px;
+		background-color: #fff;
+		position: absolute;
+	}
+
+	&__line-point-left {
+		top: -4px;
+		left: 0;
+	}
+
+	&__line-point-right {
+		top: -4px;
+		right: 0;
+	}
+
+	&__img {
+		margin-right: -20px;
+		margin-left: -20px;
+	}
 }
