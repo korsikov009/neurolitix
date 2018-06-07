@@ -2,7 +2,6 @@
 	background-image: 
 		linear-gradient(to bottom, #000427 80px, transparent 80px),
 		linear-gradient(to bottom, #000427 80px, #000a4f 100%);
-	// height: 1559px; // временно
 	padding-top: 80px;
 	margin-bottom: -10px;
 	color: white;
@@ -14,15 +13,38 @@
 	&__head-container {
 		@include row_grid(0px);
 		justify-content: space-between;
+
+		@include media(998px) {
+			flex-direction: column;
+		}
 	}
 
 	&__head-text-container {
 		padding-top: 250px;
+
+		@include media(998px) {
+			padding-top: 0;
+		}
+
 		&:first-of-type {
 			@include col_grid(8.4, 5px, 24);
+
+			@include media(998px) {
+				@include col_grid(15, 5px, 24);
+			}
 		}
 		&:last-of-type {
 			@include col_grid(7, 5px, 24);
+
+			@include media(1200px) {
+				@include col_grid(7, 1px, 24);
+			}
+
+			@include media(998px) {
+				@include col_grid(16, 5px, 24);
+				display: flex;
+				align-self: flex-end;
+			}
 		}
 		z-index: 10;
 	}
@@ -33,12 +55,28 @@
 		text-transform: uppercase;
 		font-size: 15.8rem;
 		line-height: 11.2rem;
-		span {
-			margin-left: -12px;
-		}
-
 		display: flex;
 		margin: 40px 0;
+
+		@include media(1200px) {
+			font-size: 12rem;
+			line-height: 8.8rem;
+		}
+
+		@include media(998px) {
+			font-size: 6rem;
+			line-height: 6rem;
+			margin: 0;
+		}
+
+
+		span {
+			margin-left: -12px;
+
+			@include media(998px) {
+				margin-left: -6px;
+			}
+		}
 
 		.preview__we {
 			color: #1361ff;
@@ -46,23 +84,34 @@
 
 		.preview__and {
 			color: #ff0096;
-		}
-
-		@include media(1200px) {
-			font-size: 12rem;
-			line-height: 8.8rem;
+			margin-right: 20px;
 		}
 	}
 
 	&__head-symbol {
-		margin-top: 1px;
+		
 		width: 11%;
 		margin-left: 1.3rem;
 		display: flex;
 		flex-direction: column;		
-		svg {
+		img {
+			margin-top: 1px;
 			width: 40px;
-			height: 56px;
+			height: 112px;
+
+			@include media(1200px) {
+				margin-top: 3px;
+				height: 83px;
+			}
+
+			@include media(998px) {
+				margin-top: 8px;
+				height: 42px;
+			}
+		}
+
+		@include media(998px) {
+			margin-left: 0.5rem;
 		}
 	}
 
@@ -73,6 +122,10 @@
 		line-height: 5.2rem;
 		font-weight: 800;
 		margin: 0;
+		@include media(998px) {
+			font-size: 3.2rem;
+			line-height: 4.6rem;
+		}
 	}
 
 	&__head-text-medium {
@@ -87,6 +140,10 @@
 		padding-top: 45px;
 		margin-left: -220px;
 		margin-right: -170px;
+		align-self: center;
+		@include media(998px){
+			padding-top: 0;
+		}
 	}
 
 	&__separator {
@@ -144,10 +201,18 @@
 		@include row_grid(5px);
 		font-family: 'Montserrat';
 		padding-bottom: 100px;
+
+		@include media(998px) {
+			flex-direction: column;
+		}
 	}
 
 	&__li{
 		text-align: center;
+
+		@include media(998px) {
+			text-align: left;
+		}
 
 		p {
 		 	margin: 0;
@@ -159,14 +224,30 @@
 			font-weight: 800;
 			@include col_grid(3, 5px);
 			transform: translate(7%, -35%);
+			@include media(998px) {
+				@include col_grid(8, 10px);
+				transform: none;
+			}
+
 		}
 
 		&:nth-of-type(2) {
 		 	font-size: 3.4rem;
 			line-height: 4.4rem;
 			font-weight: bold;
-			@include col_grid(5, 20px);
+			@include col_grid(5, 10px);
 			transform: translate(0, 10%);
+			@include media(1200px) {
+				@include col_grid(5, 10px);
+			}
+			@include media(998px) {
+				font-size: 3rem;
+				line-height: 4.2rem;
+				align-self: flex-end;
+				@include col_grid(8, 10px);
+				text-align: right;
+				transform: none;
+			}
 		}
 
 		&:nth-of-type(3) {
@@ -175,6 +256,12 @@
 			font-weight: 500;
 			@include col_grid(3, 5px);
 			transform: translate(-7%, -15%);
+			@include media(998px) {
+				font-size: 2.4rem;
+				line-height: 3.7rem;
+				@include col_grid(8, 10px);
+				transform: none;
+			}
 		}
 
 		&:nth-of-type(4) {
@@ -183,6 +270,14 @@
 			font-weight: 500;
 			@include col_grid(4, 0px);
 			transform: translate(25%, 9%);
+			@include media(998px) {
+				font-size: 2.4rem;
+				line-height: 3.7rem;
+				align-self: flex-end;
+				@include col_grid(8, 10px);
+				text-align: right;
+				transform: none;
+			}
 		}
 
 		&:nth-of-type(5) {
@@ -191,6 +286,15 @@
 			font-weight: bold;
 			@include col_grid(4, 15px);
 			transform: translate(-48%, 46%);
+			@include media(1200px) {
+				@include col_grid(4, 0px);
+			}
+			@include media(998px) {
+				font-size: 2.4rem;
+				line-height: 3.7rem;
+				@include col_grid(8, 10px);
+				transform: none;
+			}
 		}
 	}
 
@@ -208,9 +312,9 @@
         font-size: 2rem;
     }
     
-    &__transition {
-        margin-top: -5px;
-        height: 14.1vw;
-        background-image: linear-gradient(to bottom right, transparent 49.93%, white 50.07%);
-    }
+    // &__transition {
+    //     margin-top: -5px;
+    //     height: 14.1vw;
+    //     background-image: linear-gradient(to bottom right, transparent 49.90%, white 50.10%);
+    // }
 }

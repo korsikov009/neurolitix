@@ -9,6 +9,10 @@
 	color: white;
 	background-color: $darkBlue;
 
+	@include media(998px) {
+		position: absolute;
+	}
+
 
 	&__container {
 		@extend %container;
@@ -58,6 +62,15 @@
 		justify-content: center;
 		color: white;
 		align-items: center;
+
+		@include media(1200px){
+			font-size: 16px;
+		}
+
+		@include media(998px) {
+			background-image: none;
+			background-color: #c70075;
+		}
 	}
 }
 
@@ -65,6 +78,13 @@
 	width: 462px;
 	@include row_grid(0px);
 	justify-content: space-between;
+	@include media(1200px){
+		width: 500px;
+	}
+
+	@include media(998px){
+		display: none;
+	}
 
 	&__li {
 		align-self: center;
@@ -77,6 +97,26 @@
 		font-size: 1.5rem;
 		font-weight: 500;
 		font-family: 'Roboto';
+
+		@include media(1200px) {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+.menu-mobile {
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	display: none;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	@include media(998px) {
+		display: block;
 	}
 }
 

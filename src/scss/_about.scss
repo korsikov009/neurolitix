@@ -11,15 +11,21 @@
         color: #00052f;
         z-index: 100;
         text-align: center;
-        margin: 0 0 50px;
+        margin: 5px 0 50px;
     }
     
     &__list {
         @include row_grid (20px);
+        @include media(1200px) {
+            justify-content: center;
+        }
     }
 
     &__li {
         @include col_grid(4, 20px);
+        @include media(1200px) {
+            @include col_grid(4, 20px);
+        }
 
 
         &-text {
@@ -31,7 +37,12 @@
         &:first-of-type {
             color: #4a90e2;
             font: bold 2.2rem/1.59 'Montserrat';
-            padding-top: 0.5rem;
+            padding-top: 1rem;
+
+            @include media(1200px) {
+                font-size: 2rem;
+                line-height: 3.5rem;
+            }
         }
     }
 
@@ -43,7 +54,13 @@
 
     &__transition {
         margin-top: -5px;
-        height: 275px;
-        background-image: linear-gradient(to bottom right, transparent 49.93%, #000427 50.07%);
+        height: 14.1vw;
+        background-image: linear-gradient(to bottom right, transparent 49.9%, #000427 50.1%);
+    }
+
+    &__transition-top {
+        margin-top: -5px;
+        height: 14.1vw;
+        background-image: linear-gradient(to bottom right, #000a4f 49.90%, white 50.10%);
     }
 }
