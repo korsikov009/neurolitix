@@ -1,0 +1,19 @@
+.about {
+    height: 1000px;
+    
+    &__container {
+        @extend %container;
+        z-index: 1000;
+    }
+    
+    &__title {
+        font-family: "Montserrat";
+        font-size: 5.6rem;
+        line-height: 1;
+        font-weight: bold;
+        color: black;
+        z-index: 100;
+        text-align: center;
+        margin: 0;
+    }
+}

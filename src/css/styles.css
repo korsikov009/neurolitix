@@ -42,7 +42,7 @@ html {
 body {
   background-color: white; }
 
-.header__container, .preview__container {
+.header__container, .preview__container, .about__container {
   max-width: 1090px;
   min-width: 320px;
   margin-left: auto;
@@ -152,7 +152,6 @@ body {
   background-image: -o-linear-gradient(top, #000427 80px, transparent 80px), -o-linear-gradient(top, #000427 80px, #000a4f 100%);
   background-image: linear-gradient(to bottom, #000427 80px, transparent 80px), linear-gradient(to bottom, #000427 80px, #000a4f 100%);
   padding-top: 80px;
-  padding-bottom: 30px;
   color: white; }
 
 .preview__head-container {
@@ -411,9 +410,33 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 24px auto;
+  margin: 24px auto 0;
   background: url("../img/icons/btn.svg") no-repeat 50% 50%;
   color: white;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 2rem; }
+
+.preview__transition {
+  margin-top: -5px;
+  height: 275px;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(49.93%, transparent), color-stop(50.07%, white));
+  background-image: -webkit-linear-gradient(top left, transparent 49.93%, white 50.07%);
+  background-image: -o-linear-gradient(top left, transparent 49.93%, white 50.07%);
+  background-image: linear-gradient(to bottom right, transparent 49.93%, white 50.07%); }
+
+.about {
+  height: 1000px; }
+
+.about__container {
+  z-index: 1000; }
+
+.about__title {
+  font-family: "Montserrat";
+  font-size: 5.6rem;
+  line-height: 1;
+  font-weight: bold;
+  color: black;
+  z-index: 100;
+  text-align: center;
+  margin: 0; }
