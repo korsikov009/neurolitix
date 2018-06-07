@@ -4,7 +4,7 @@
 		linear-gradient(to bottom, #000427 80px, #000a4f 100%);
 	// height: 1559px; // временно
 	padding-top: 80px;
-//	padding-bottom: 285px;
+	margin-bottom: -10px;
 	color: white;
 
 	&__container {
@@ -46,6 +46,11 @@
 
 		.preview__and {
 			color: #ff0096;
+		}
+
+		@include media(1200px) {
+			font-size: 12rem;
+			line-height: 8.8rem;
 		}
 	}
 
@@ -205,7 +210,7 @@
     
     &__transition {
         margin-top: -5px;
-        height: 275px;
+        height: 14.1vw;
         background-image: linear-gradient(to bottom right, transparent 49.93%, white 50.07%);
     }
 }
