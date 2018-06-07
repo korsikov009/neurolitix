@@ -2,8 +2,10 @@
 	background-image: 
 		linear-gradient(to bottom, #000427 80px, transparent 80px),
 		linear-gradient(to bottom, #000427 80px, #000a4f 100%);
-	height: 1559px; // временно
+	// height: 1559px; // временно
 	padding-top: 80px;
+	padding-bottom: 30px;
+	color: white;
 
 	&__container {
 		@extend %container;
@@ -15,7 +17,6 @@
 	}
 
 	&__head-text-container {
-		color: white;
 		padding-top: 250px;
 		&:first-of-type {
 			@include col_grid(8.4, 5px, 24);
@@ -90,7 +91,7 @@
 	}
 
 	&__line {
-		@include col_grid(23, 0px, 48);
+		width: 48%;
 		height: 1px;
 		background-color: rgba(255,255,255,0.3);
 		position: relative;
@@ -119,4 +120,86 @@
 		margin-right: -20px;
 		margin-left: -20px;
 	}
+
+	&__img-question {
+		font-family: 'Montserrat';
+		font-size: 86px;
+		font-weight: bold;
+		width: 106px;
+		height: 106px;
+		border-radius: 56px;
+		background-color: #ff0096;
+		display: flex;
+		justify-content: center;
+		flex-direction: center;
+		margin: 42px auto;
+	}
+
+	&__list {
+		@include row_grid(5px);
+		font-family: 'Montserrat';
+		padding-bottom: 100px;
+	}
+
+	&__li{
+		text-align: center;
+
+		p {
+		 	margin: 0;
+		}
+
+		&:first-of-type {
+		 	font-size: 2.4rem;
+			line-height: 3.7rem;
+			font-weight: 800;
+			@include col_grid(3, 5px);
+			transform: translate(7%, -35%);
+		}
+
+		&:nth-of-type(2) {
+		 	font-size: 3.4rem;
+			line-height: 4.4rem;
+			font-weight: bold;
+			@include col_grid(5, 20px);
+			transform: translate(0, 10%);
+		}
+
+		&:nth-of-type(3) {
+		 	font-size: 2.2rem;
+			line-height: 3.6rem;
+			font-weight: 500;
+			@include col_grid(3, 5px);
+			transform: translate(-7%, -15%);
+		}
+
+		&:nth-of-type(4) {
+		 	font-size: 2.4rem;
+			line-height: 3.6rem;
+			font-weight: 500;
+			@include col_grid(4, 0px);
+			transform: translate(25%, 9%);
+		}
+
+		&:nth-of-type(5) {
+		 	font-size: 2.6rem;
+			line-height: 3.5rem;
+			font-weight: bold;
+			@include col_grid(4, 15px);
+			transform: translate(-48%, 46%);
+		}
+	}
+
+	&__btn-down {
+        width: 380px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px auto;
+        background: url('../img/icons/btn.svg') no-repeat 50% 50%;
+        color: white;
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 2rem;
+    }
 }

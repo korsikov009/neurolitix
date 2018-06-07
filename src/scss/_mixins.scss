@@ -1,6 +1,7 @@
 @mixin row_grid($margin){
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: -$margin;
     margin-right: -$margin;
     @content;
