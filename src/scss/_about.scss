@@ -1,6 +1,38 @@
 .about {    
+    transform: rotate(-8deg);
+    background-color: #fff;
+    width: 100%;
+    padding: 120px 0 155px;
+    z-index: 10;
+
+    @include media(1200px) {
+        padding: 100px 0 130px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15%;
+        width: 16%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15%;
+        width: 16%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+    }
+
     &__container {
         @extend %container;
+        transform: rotate(8deg);
     }
     
     &__title {
