@@ -3,6 +3,9 @@ html {
 	@include media(640px) {
 		font-size: 9px;
 	}
+	@include media(480px) {
+		font-size: 8px;
+	}
 }
 
 body {
@@ -20,5 +23,12 @@ body {
 	margin-right: auto;
 	@include media(1200px) {
 		padding: 0 25px;
+	}
+
+	@include media(640px) {
+		padding: 0 16px;
+	}
+	@include media(480px) {
+		padding: 0 12px;
 	}
 }

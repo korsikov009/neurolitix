@@ -18,7 +18,7 @@
         height: 100%;
         background-color: #fff;
         @include media (640px) {
-            left: -190px;
+            left: -199px;
             width: 200px;
         }
     }
@@ -31,10 +31,15 @@
         width: 16%;
         height: 100%;
         background-color: #fff;
+        background-image: linear-gradient(to top, transparent,);
         z-index: 1;
         @include media (640px) {
-            right: -190px;
+            right: -199px;
             width: 200px;
+        }
+        @include media (480px) {
+            background-color: transparent;
+            background-image: linear-gradient(to top, transparent 80%, #fff 80%);
         }
     }
 
