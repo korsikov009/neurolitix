@@ -51,6 +51,11 @@
         @include media(1200px) {
             justify-content: center;
         }
+        @include media(998px) {
+            flex-direction: column;
+            align-items: center;
+            @include row_grid (0px);
+        }
     }
 
     &__li {
@@ -58,12 +63,21 @@
         @include media(1200px) {
             @include col_grid(4, 20px);
         }
+        @include media(998px) {
+            @include col_grid(12, 10px);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
 
 
         &-text {
             font: normal 1.6rem/2.2rem "Roboto";
             margin: 0.5rem 0;
             color: #4a4a4a;
+            @include media(998px) {
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
         }
 
         &:first-of-type {
@@ -74,6 +88,10 @@
             @include media(1200px) {
                 font-size: 2rem;
                 line-height: 3.5rem;
+            }
+            @include media(998px) {
+                font-size: 2.4rem;
+                line-height: 4rem;
             }
         }
     }

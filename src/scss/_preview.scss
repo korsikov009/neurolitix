@@ -228,7 +228,7 @@
 			@include col_grid(3, 5px);
 			transform: translate(7%, -35%);
 			@include media(998px) {
-				@include col_grid(7, 10px);
+				@include col_grid(8, 10px);
 				font-size: 3rem;
 				line-height: 4.2rem;
 				transform: none;
@@ -319,6 +319,10 @@
         font-family: "Roboto";
         font-weight: bold;
         font-size: 2rem;
+
+        @include media(998px) {
+			margin: 100px auto 50px;
+        }
     }
     
     // &__transition {

@@ -498,8 +498,8 @@ body {
 
 @media only screen and (max-width: 998px) {
   .preview__li:first-of-type {
-    width: -webkit-calc(100%/12*7 - 10px*2);
-    width: calc(100%/12*7 - 10px*2);
+    width: -webkit-calc(100%/12*8 - 10px*2);
+    width: calc(100%/12*8 - 10px*2);
     margin-left: 10px;
     margin-right: 10px;
     font-size: 3rem;
@@ -652,6 +652,10 @@ body {
   font-weight: bold;
   font-size: 2rem; }
 
+@media only screen and (max-width: 998px) {
+  .preview__btn-down {
+    margin: 100px auto 50px; } }
+
 .about {
   -webkit-transform: rotate(-8deg);
       -ms-transform: rotate(-8deg);
@@ -721,6 +725,31 @@ body {
         -ms-flex-pack: center;
             justify-content: center; } }
 
+@media only screen and (max-width: 998px) {
+  .about__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px; } }
+
 .about__li {
   width: -webkit-calc(100%/12*4 - 20px*2);
   width: calc(100%/12*4 - 20px*2);
@@ -734,10 +763,24 @@ body {
     margin-left: 20px;
     margin-right: 20px; } }
 
+@media only screen and (max-width: 998px) {
+  .about__li {
+    width: -webkit-calc(100%/12*12 - 10px*2);
+    width: calc(100%/12*12 - 10px*2);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px; } }
+
 .about__li-text {
   font: normal 1.6rem/2.2rem "Roboto";
   margin: 0.5rem 0;
   color: #4a4a4a; }
+
+@media only screen and (max-width: 998px) {
+  .about__li-text {
+    font-size: 2rem;
+    line-height: 2.8rem; } }
 
 .about__li:first-of-type {
   color: #4a90e2;
@@ -748,6 +791,11 @@ body {
   .about__li:first-of-type {
     font-size: 2rem;
     line-height: 3.5rem; } }
+
+@media only screen and (max-width: 998px) {
+  .about__li:first-of-type {
+    font-size: 2.4rem;
+    line-height: 4rem; } }
 
 .about__li-title {
   font: bold 2.6rem/3.5rem 'Montserrat';
