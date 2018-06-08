@@ -17,6 +17,10 @@
         width: 16%;
         height: 100%;
         background-color: #fff;
+        @include media (640px) {
+            left: -190px;
+            width: 200px;
+        }
     }
 
     &::after {
@@ -28,6 +32,10 @@
         height: 100%;
         background-color: #fff;
         z-index: 1;
+        @include media (640px) {
+            right: -190px;
+            width: 200px;
+        }
     }
 
     &__container {
