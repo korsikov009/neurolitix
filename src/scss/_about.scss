@@ -44,6 +44,9 @@
         z-index: 100;
         text-align: center;
         margin: 5px 0 50px;
+        @include media(768px) {
+            margin: 0;
+        }
     }
     
     &__list {
@@ -65,8 +68,8 @@
         }
         @include media(998px) {
             @include col_grid(12, 10px);
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
 

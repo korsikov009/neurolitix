@@ -217,6 +217,10 @@
 			margin: -20px;
 		}
 
+		@include media(768px) {
+			margin: -15px;
+		}
+
 		p {
 		 	margin: 0;
 		}
@@ -233,6 +237,9 @@
 				line-height: 4.2rem;
 				transform: none;
 				font-weight: bold;
+			}
+			@include media(768px) {
+				@include col_grid(10, 10px);
 			}
 
 		}
@@ -286,6 +293,9 @@
 				transform: none;
 				font-weight: bold;
 			}
+			@include media(768px) {
+				@include col_grid(8, 10px);;
+			}
 		}
 
 		&:nth-of-type(5) {
@@ -303,6 +313,9 @@
 				@include col_grid(7, 10px);
 				transform: none;
 				font-weight: 500;
+			}
+			@include media(768px) {
+				@include col_grid(8, 10px);;
 			}
 		}
 	}
