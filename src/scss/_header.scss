@@ -90,6 +90,9 @@
 			height: 28px;
 			font-size: 1.4rem;
 		}
+		@include media(359px) {
+			display: none;
+		}
 	}
 }
 

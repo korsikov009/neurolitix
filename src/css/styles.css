@@ -180,6 +180,10 @@ body {
     height: 28px;
     font-size: 1.4rem; } }
 
+@media only screen and (max-width: 359px) {
+  .header__btn {
+    display: none; } }
+
 .menu {
   width: 462px;
   display: -webkit-box;
@@ -316,8 +320,15 @@ body {
 
 @media only screen and (max-width: 480px) {
   .preview__head-text-container:first-of-type {
-    width: -webkit-calc(100%/24*14 - 5px*2);
-    width: calc(100%/24*14 - 5px*2);
+    width: -webkit-calc(100%/24*16 - 5px*2);
+    width: calc(100%/24*16 - 5px*2);
+    margin-left: 5px;
+    margin-right: 5px; } }
+
+@media only screen and (max-width: 359px) {
+  .preview__head-text-container:first-of-type {
+    width: -webkit-calc(100%/24*18 - 5px*2);
+    width: calc(100%/24*18 - 5px*2);
     margin-left: 5px;
     margin-right: 5px; } }
 
@@ -693,6 +704,13 @@ body {
     line-height: 3.7rem;
     font-weight: 800; } }
 
+@media only screen and (max-width: 480px) {
+  .preview__li:nth-of-type(2) {
+    width: -webkit-calc(100%/12*9 - 10px*2);
+    width: calc(100%/12*9 - 10px*2);
+    margin-left: 10px;
+    margin-right: 10px; } }
+
 .preview__li:nth-of-type(3) {
   font-size: 2.2rem;
   line-height: 3.6rem;
@@ -716,6 +734,13 @@ body {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none; } }
+
+@media only screen and (max-width: 480px) {
+  .preview__li:nth-of-type(3) {
+    width: -webkit-calc(100%/12*9 - 10px*2);
+    width: calc(100%/12*9 - 10px*2);
+    margin-left: 10px;
+    margin-right: 10px; } }
 
 .preview__li:nth-of-type(4) {
   font-size: 2.4rem;
@@ -750,6 +775,13 @@ body {
   .preview__li:nth-of-type(4) {
     width: -webkit-calc(100%/12*8 - 10px*2);
     width: calc(100%/12*8 - 10px*2);
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  .preview__li:nth-of-type(4) {
+    width: -webkit-calc(100%/12*9 - 10px*2);
+    width: calc(100%/12*9 - 10px*2);
     margin-left: 10px;
     margin-right: 10px; } }
 
@@ -792,6 +824,13 @@ body {
     margin-left: 10px;
     margin-right: 10px; } }
 
+@media only screen and (max-width: 480px) {
+  .preview__li:nth-of-type(5) {
+    width: -webkit-calc(100%/12*9 - 10px*2);
+    width: calc(100%/12*9 - 10px*2);
+    margin-left: 10px;
+    margin-right: 10px; } }
+
 .preview__btn-down {
   width: 380px;
   height: 80px;
@@ -809,14 +848,26 @@ body {
           align-items: center;
   margin: 24px auto 0;
   background: url("../img/icons/btn.svg") no-repeat 50% 50%;
+  -webkit-background-size: cover;
+          background-size: cover;
   color: white;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 2rem; }
 
+.preview__btn-down img {
+  width: 100%; }
+
 @media only screen and (max-width: 998px) {
   .preview__btn-down {
     margin: 100px auto 50px; } }
+
+@media only screen and (max-width: 480px) {
+  .preview__btn-down {
+    margin: 100px auto 50px;
+    width: 280px;
+    height: -webkit-calc(280px / 380 * 80);
+    height: calc(280px / 380 * 80); } }
 
 .about {
   -webkit-transform: rotate(-8deg);
@@ -830,6 +881,10 @@ body {
 @media only screen and (max-width: 1200px) {
   .about {
     padding: 100px 0 130px; } }
+
+@media only screen and (max-width: 480px) {
+  .about {
+    padding: 80px 0 90px; } }
 
 .about::before {
   content: "";
@@ -853,10 +908,6 @@ body {
   width: 16%;
   height: 100%;
   background-color: #fff;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent));
-  background-image: -webkit-linear-gradient(bottom, transparent);
-  background-image: -o-linear-gradient(bottom, transparent);
-  background-image: linear-gradient(to top, transparent);
   z-index: 1; }
 
 @media only screen and (max-width: 640px) {
@@ -867,10 +918,10 @@ body {
 @media only screen and (max-width: 480px) {
   .about::after {
     background-color: transparent;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(80%, transparent), color-stop(80%, #fff));
-    background-image: -webkit-linear-gradient(bottom, transparent 80%, #fff 80%);
-    background-image: -o-linear-gradient(bottom, transparent 80%, #fff 80%);
-    background-image: linear-gradient(to top, transparent 80%, #fff 80%); } }
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, transparent), color-stop(90%, #fff));
+    background-image: -webkit-linear-gradient(bottom, transparent 90%, #fff 90%);
+    background-image: -o-linear-gradient(bottom, transparent 90%, #fff 90%);
+    background-image: linear-gradient(to top, transparent 90%, #fff 90%); } }
 
 .about__container {
   -webkit-transform: rotate(8deg);
