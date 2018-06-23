@@ -1,0 +1,127 @@
+.technologies-advantages {
+  background-image:
+          linear-gradient(to bottom, #000427 80px, transparent 80px),
+          linear-gradient(to bottom, #000427 80px, #000a4f 100%);
+  padding-top: 15vw;
+  margin-top: -10vw;
+  padding-bottom: 19vw;
+  margin-bottom: -8vw;
+
+  &__container {
+    @extend %container;
+  }
+}
+
+.technologies {
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.6rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #fff;
+    z-index: 100;
+    text-align: center;
+    margin: 30px 0 45px;
+    @include media(768px) {
+      margin: 0;
+    }
+  }
+
+  &__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    color: #4a90e2;
+    font: bold 2.2rem/1.59 'Montserrat', sans-serif;
+    width: 24.8%;
+  }
+
+  &__wrapper-for-list {
+    width: 65%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__li-number {
+    color: #4a90e2;
+    font: normal 3rem/1.17 'Montserrat', sans-serif;
+    margin: 0;
+  }
+
+  &__li-text {
+    color: #ffffff;
+    font: bold 2.4rem/1.46 'Montserrat', sans-serif;
+    margin: 0;
+  }
+
+  &__note {
+    color: #ffffff;
+    font: normal 1.6rem/1.38 'Roboto', sans-serif;
+    margin: 2.2rem 0;
+  }
+
+  &__separator {
+    border: none;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    margin: 20px 0;
+  }
+
+  &__flex-container {
+    @include row_grid(20px);
+  }
+
+  &__flex-item {
+    @include col_grid(4, 20px);
+    color: #fff;
+  }
+
+  &__flex-item-title {
+    font: 500 2.4rem/1.46 'Montserrat',sans-serif;
+    margin-bottom: -0.5rem;
+  }
+
+  &__flex-item-text {
+    font: normal 1.5rem/1.47 'Roboto',sans-serif;
+    margin: 2rem 0;
+  }
+}
+
+.advantages {
+  &__title {
+    @extend .technologies__title;
+    margin: 65px 0 50px;
+  }
+
+  &__flex-container {
+    @include row_grid(24px);
+  }
+
+  &__flex-item {
+    @include col_grid(4, 24px);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__flex-item-img {
+    height: 62px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  &__flex-item-text {
+    color: #fff;
+    font: 500 2.3rem/1.52 'Montserrat', sans-serif;
+    margin: 2rem 0;
+  }
+
+}

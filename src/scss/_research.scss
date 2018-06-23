@@ -25,19 +25,19 @@
 		}
 	}
 
-	.research__container-for-lists {
+	&__container-for-lists {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.research__preview-flex-container {
+	&__preview-flex-container {
 		display: flex;
 		flex-direction: column;
 		width: 30%;
 		margin-top: 75px;
 	}
 
-	.research__preview-flex-item {
+	&__preview-flex-item {
 
 		&:first-of-type {
 			color: #4a90e2;
@@ -51,7 +51,7 @@
 		}
 	}
 
-	.research__flex-container {
+	&__flex-container {
 		width: 70%;
 		padding: 0 10px;
 		@include row_grid(18px);
@@ -61,7 +61,7 @@
 		justify-content: flex-start;
 	}
 
-	.research__flex-item {
+	&__flex-item {
 		@include col_grid(6, 18px);
 		display: flex;
 		flex-direction: column;

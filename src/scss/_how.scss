@@ -52,7 +52,7 @@
   }
 
   &__title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 5.6rem;
     line-height: 1;
     font-weight: bold;
@@ -92,13 +92,13 @@
     }
 
     &-title {
-      font: bold 2.6rem/3.5rem 'Montserrat';
+      font: bold 2.6rem/3.5rem 'Montserrat', sans-serif;
       margin: 0.6rem 0;
       color: #00052f;
     }
 
     &-text {
-      font: normal 1.6rem/2.2rem "Roboto";
+      font: normal 1.6rem/2.2rem "Roboto", sans-serif;
       margin: 0.5rem 0;
       color: #4a4a4a;
       @include media(998px) {
@@ -110,7 +110,7 @@
     &:first-of-type {
       @include col_grid(8, 25px);
       color: #4a90e2;
-      font: bold 2.2rem/1.59 'Montserrat';
+      font: bold 2.2rem/1.59 'Montserrat', sans-serif;
       padding-top: 1rem;
 
       @include media(1200px) {
