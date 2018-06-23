@@ -1,8 +1,8 @@
 ;(function () {
-	var list = document.getElementsByClassName('preview__list')[0];
+	var list = document.getElementsByClassName('preview__flex-container')[0];
 
 	function toMixList() {
-	    var listLi = list.getElementsByClassName('preview__li');
+	    var listLi = list.getElementsByClassName('preview__flex-item');
 
 	    list.appendChild(listLi[1]);
 	    list.appendChild(listLi[0]);

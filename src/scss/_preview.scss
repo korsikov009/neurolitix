@@ -259,7 +259,7 @@
 		margin: 42px auto;
 	}
 
-	&__list {
+	&__flex-container {
 		@include row_grid(5px);
 		font-family: 'Montserrat';
 		padding-bottom: 100px;
@@ -276,7 +276,7 @@
 		}
 	}
 
-	&__li{
+	&__flex-item {
 		text-align: center;
 
 		@include media(998px) {
