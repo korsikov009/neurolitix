@@ -1,0 +1,126 @@
+.how {
+  transform: rotate(8deg);
+  background-color: #fff;
+  width: 100%;
+  padding: 120px 0 155px;
+  z-index: 10;
+
+  @include media(1200px) {
+    padding: 100px 0 130px;
+  }
+
+  @include media(480px) {
+    padding: 80px 0 90px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15%;
+    width: 16%;
+    height: 100%;
+    background-color: #fff;
+    @include media (640px) {
+      left: -199px;
+      width: 200px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15%;
+    width: 16%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    @include media (640px) {
+      right: -199px;
+      width: 200px;
+    }
+    @include media (480px) {
+      background-color: transparent;
+      background-image: linear-gradient(to top, transparent 90%, #fff 90%);
+    }
+  }
+
+  &__container {
+    @extend %container;
+    transform: rotate(-8deg);
+  }
+
+  &__title {
+    font-family: "Montserrat";
+    font-size: 5.6rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #00052f;
+    z-index: 100;
+    text-align: center;
+    margin: 15px 0 50px;
+    @include media(768px) {
+      margin: 0;
+    }
+  }
+
+  &__flex-container{
+    @include row_grid (25px);
+    @include media(1200px) {
+      justify-content: center;
+    }
+    @include media(998px) {
+      flex-direction: column;
+      align-items: center;
+      @include row_grid (0px);
+    }
+  }
+
+  &__flex-item {
+    @include col_grid(4, 25px);
+
+    margin-bottom: 25px;
+
+    @include media(1200px) {
+      @include col_grid(4, 20px);
+    }
+    @include media(998px) {
+      @include col_grid(12, 10px);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      font: bold 2.6rem/3.5rem 'Montserrat';
+      margin: 0.6rem 0;
+      color: #00052f;
+    }
+
+    &-text {
+      font: normal 1.6rem/2.2rem "Roboto";
+      margin: 0.5rem 0;
+      color: #4a4a4a;
+      @include media(998px) {
+        font-size: 2rem;
+        line-height: 2.8rem;
+      }
+    }
+
+    &:first-of-type {
+      @include col_grid(8, 25px);
+      color: #4a90e2;
+      font: bold 2.2rem/1.59 'Montserrat';
+      padding-top: 1rem;
+
+      @include media(1200px) {
+        font-size: 2rem;
+        line-height: 3.5rem;
+      }
+      @include media(998px) {
+        font-size: 2.4rem;
+        line-height: 4rem;
+      }
+    }
+  }
+}
