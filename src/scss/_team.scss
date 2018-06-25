@@ -1,9 +1,10 @@
-.how {
-  transform: rotate(8deg);
+.team {
+  transform: rotate(-8deg);
   background-color: #fff;
   width: 100%;
   padding: 120px 0 155px;
   z-index: 10;
+  border-bottom: solid 1px #9faac2;
 
   @include media(1200px) {
     padding: 100px 0 130px;
@@ -21,6 +22,7 @@
     width: 16%;
     height: 100%;
     background-color: #fff;
+    border-bottom: solid 1px #9faac2;
     @include media (640px) {
       left: -199px;
       width: 200px;
@@ -48,7 +50,7 @@
 
   &__container {
     @extend %container;
-    transform: rotate(-8deg);
+    transform: rotate(8deg);
   }
 
   &__title {
@@ -59,14 +61,14 @@
     color: #00052f;
     z-index: 100;
     text-align: center;
-    margin: 20px 0 50px;
+    margin: 15px 0 50px;
     @include media(768px) {
       margin: 0;
     }
   }
 
   &__flex-container{
-    @include row_grid (25px);
+    @include row_grid (20px);
     @include media(1200px) {
       justify-content: center;
     }
@@ -78,9 +80,9 @@
   }
 
   &__flex-item {
-    @include col_grid(4, 25px);
+    @include col_grid(4, 20px);
 
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 
     @include media(1200px) {
       @include col_grid(4, 20px);
@@ -91,10 +93,16 @@
       margin-bottom: 20px;
     }
 
-    &-title {
-      font: bold 2.6rem/3.5rem 'Montserrat', sans-serif;
-      margin: 0.6rem 0;
+    &-name {
       color: #00052f;
+      font: bold 2.6rem/1.35 'Montserrat', sans-serif;
+      margin: 20px 0 0;
+    }
+
+    &-title {
+      color: #00052f;
+      font: normal 2.6rem/1.35 'Montserrat', sans-serif;
+      margin: 0 0 10px;
     }
 
     &-text {
@@ -104,22 +112,6 @@
       @include media(998px) {
         font-size: 2rem;
         line-height: 2.8rem;
-      }
-    }
-
-    &:first-of-type {
-      @include col_grid(8, 25px);
-      color: #4a90e2;
-      font: bold 2.2rem/1.59 'Montserrat', sans-serif;
-      padding-top: 1rem;
-
-      @include media(1200px) {
-        font-size: 2rem;
-        line-height: 3.5rem;
-      }
-      @include media(998px) {
-        font-size: 2.4rem;
-        line-height: 4rem;
       }
     }
   }

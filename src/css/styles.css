@@ -58,22 +58,22 @@ body {
 .wrapper {
   overflow: hidden; }
 
-.header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container {
+.header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container {
   max-width: 1090px;
   min-width: 320px;
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (max-width: 1200px) {
-  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container {
+  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container {
     padding: 0 25px; } }
 
 @media only screen and (max-width: 640px) {
-  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container {
+  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container {
     padding: 0 16px; } }
 
 @media only screen and (max-width: 480px) {
-  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container {
+  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container {
     padding: 0 12px; } }
 
 .header {
@@ -1315,7 +1315,7 @@ body {
   color: #00052f;
   z-index: 100;
   text-align: center;
-  margin: 15px 0 50px; }
+  margin: 20px 0 50px; }
 
 @media only screen and (max-width: 768px) {
   .how__title {
@@ -1397,7 +1397,7 @@ body {
   color: #00052f; }
 
 .how__flex-item-text {
-  font: normal 1.6rem/2.2rem "Roboto", sans-serif;
+  font: normal 1.6rem/1.38 "Roboto", sans-serif;
   margin: 0.5rem 0;
   color: #4a4a4a; }
 
@@ -1573,3 +1573,168 @@ body {
   color: #fff;
   font: 500 2.3rem/1.52 'Montserrat', sans-serif;
   margin: 2rem 0; }
+
+.team {
+  -webkit-transform: rotate(-8deg);
+      -ms-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+  background-color: #fff;
+  width: 100%;
+  padding: 120px 0 155px;
+  z-index: 10;
+  border-bottom: solid 1px #9faac2; }
+
+@media only screen and (max-width: 1200px) {
+  .team {
+    padding: 100px 0 130px; } }
+
+@media only screen and (max-width: 480px) {
+  .team {
+    padding: 80px 0 90px; } }
+
+.team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15%;
+  width: 16%;
+  height: 100%;
+  background-color: #fff;
+  border-bottom: solid 1px #9faac2; }
+
+@media only screen and (max-width: 640px) {
+  .team::before {
+    left: -199px;
+    width: 200px; } }
+
+.team::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -15%;
+  width: 16%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1; }
+
+@media only screen and (max-width: 640px) {
+  .team::after {
+    right: -199px;
+    width: 200px; } }
+
+@media only screen and (max-width: 480px) {
+  .team::after {
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(90%, transparent), color-stop(90%, #fff));
+    background-image: -webkit-linear-gradient(bottom, transparent 90%, #fff 90%);
+    background-image: -o-linear-gradient(bottom, transparent 90%, #fff 90%);
+    background-image: linear-gradient(to top, transparent 90%, #fff 90%); } }
+
+.team__container {
+  -webkit-transform: rotate(8deg);
+      -ms-transform: rotate(8deg);
+          transform: rotate(8deg); }
+
+.team__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.6rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #00052f;
+  z-index: 100;
+  text-align: center;
+  margin: 15px 0 50px; }
+
+@media only screen and (max-width: 768px) {
+  .team__title {
+    margin: 0; } }
+
+.team__flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px; }
+
+@media only screen and (max-width: 1200px) {
+  .team__flex-container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media only screen and (max-width: 998px) {
+  .team__flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px; } }
+
+.team__flex-item {
+  width: -webkit-calc(100%/12*4 - 20px*2);
+  width: calc(100%/12*4 - 20px*2);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 35px; }
+
+@media only screen and (max-width: 1200px) {
+  .team__flex-item {
+    width: -webkit-calc(100%/12*4 - 20px*2);
+    width: calc(100%/12*4 - 20px*2);
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@media only screen and (max-width: 998px) {
+  .team__flex-item {
+    width: -webkit-calc(100%/12*12 - 10px*2);
+    width: calc(100%/12*12 - 10px*2);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+.team__flex-item-name {
+  color: #00052f;
+  font: bold 2.6rem/1.35 'Montserrat', sans-serif;
+  margin: 20px 0 0; }
+
+.team__flex-item-title {
+  color: #00052f;
+  font: normal 2.6rem/1.35 'Montserrat', sans-serif;
+  margin: 0 0 10px; }
+
+.team__flex-item-text {
+  font: normal 1.6rem/1.38 "Roboto", sans-serif;
+  margin: 0.5rem 0;
+  color: #4a4a4a; }
+
+@media only screen and (max-width: 998px) {
+  .team__flex-item-text {
+    font-size: 2rem;
+    line-height: 2.8rem; } }
