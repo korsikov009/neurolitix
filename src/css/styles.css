@@ -58,22 +58,22 @@ body {
 .wrapper {
   overflow: hidden; }
 
-.header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container {
+.header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container, .footer__container {
   max-width: 1090px;
   min-width: 320px;
   margin-left: auto;
   margin-right: auto; }
 
 @media only screen and (max-width: 1200px) {
-  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container {
+  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container, .footer__container {
     padding: 0 25px; } }
 
 @media only screen and (max-width: 640px) {
-  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container {
+  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container, .footer__container {
     padding: 0 16px; } }
 
 @media only screen and (max-width: 480px) {
-  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container {
+  .header__container, .preview__container, .about__container, .research__container, .how__container, .technologies-advantages__container, .team__container, .contacts__container, .footer__container {
     padding: 0 12px; } }
 
 .header {
@@ -1042,9 +1042,10 @@ body {
   color: #00052f; }
 
 .research {
-  background-image: -webkit-linear-gradient(top, #000427 80px, transparent 80px), -webkit-linear-gradient(top, #000427 80px, #000a4f 100%);
-  background-image: -o-linear-gradient(top, #000427 80px, transparent 80px), -o-linear-gradient(top, #000427 80px, #000a4f 100%);
-  background-image: linear-gradient(to bottom, #000427 80px, transparent 80px), linear-gradient(to bottom, #000427 80px, #000a4f 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000a4f), to(#000427));
+  background-image: -webkit-linear-gradient(bottom, #000a4f, #000427);
+  background-image: -o-linear-gradient(bottom, #000a4f, #000427);
+  background-image: linear-gradient(to top, #000a4f, #000427);
   padding-top: 15vw;
   margin-top: -8vw;
   padding-bottom: 19vw;
@@ -1422,9 +1423,10 @@ body {
     line-height: 4rem; } }
 
 .technologies-advantages {
-  background-image: -webkit-linear-gradient(top, #000427 80px, transparent 80px), -webkit-linear-gradient(top, #000427 80px, #000a4f 100%);
-  background-image: -o-linear-gradient(top, #000427 80px, transparent 80px), -o-linear-gradient(top, #000427 80px, #000a4f 100%);
-  background-image: linear-gradient(to bottom, #000427 80px, transparent 80px), linear-gradient(to bottom, #000427 80px, #000a4f 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000a4f), to(#000427));
+  background-image: -webkit-linear-gradient(bottom, #000a4f, #000427);
+  background-image: -o-linear-gradient(bottom, #000a4f, #000427);
+  background-image: linear-gradient(to top, #000a4f, #000427);
   padding-top: 15vw;
   margin-top: -10vw;
   padding-bottom: 19vw;
@@ -1824,7 +1826,8 @@ body {
   border: none;
   padding: 30px;
   position: relative;
-  background-color: #3AABDF; }
+  background-color: #3AABDF;
+  cursor: pointer; }
 
 .form__submit span {
   z-index: 3;
@@ -1853,3 +1856,82 @@ body {
   top: 0;
   right: 0;
   z-index: 1; }
+
+.footer {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#000a4f), to(#000427));
+  background-image: -webkit-linear-gradient(bottom, #000a4f, #000427);
+  background-image: -o-linear-gradient(bottom, #000a4f, #000427);
+  background-image: linear-gradient(to top, #000a4f, #000427); }
+
+.footer__social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -40px;
+  margin-right: -40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.footer__reference {
+  width: -webkit-calc(100%/12*4 - 0px*2);
+  width: calc(100%/12*4 - 0px*2);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 30px;
+  font: bold 1.8rem/1.1 'Montserrat', sans-serif;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__reference:nth-of-type(1) {
+  background-color: #475a93; }
+
+.footer__reference:nth-of-type(2) {
+  background-color: #1ca1f1; }
+
+.footer__reference:nth-of-type(3) {
+  background-color: #4e5dd5; }
+
+.footer__reference img {
+  margin-right: 10px; }
+
+.footer__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0; }
+
+.footer__title {
+  color: #6b6b6b;
+  font: bold 1.4rem/1.69 'Montserrat', sans-serif;
+  width: 20%; }
+
+.footer__text {
+  color: #6b6b6b;
+  font: normal 1.3rem/1.69 'Roboto', sans-serif;
+  width: 75%; }
