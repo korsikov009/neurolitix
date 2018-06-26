@@ -60,9 +60,6 @@
     z-index: 100;
     text-align: center;
     margin: 20px 0 50px;
-    @include media(768px) {
-      margin: 0;
-    }
   }
 
   &__flex-container{
