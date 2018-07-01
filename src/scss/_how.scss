@@ -40,15 +40,13 @@
       right: -199px;
       width: 200px;
     }
-    @include media (480px) {
-      background-color: transparent;
-      background-image: linear-gradient(to top, transparent 90%, #fff 90%);
-    }
   }
 
   &__container {
     @extend %container;
     transform: rotate(-8deg);
+    position: relative;
+    z-index: 10;
   }
 
   &__title {

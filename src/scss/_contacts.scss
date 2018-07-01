@@ -30,9 +30,14 @@
     font: normal 2.6rem/1.35 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
+    transition: 0.2s;
 
     img {
       margin-right: 10px;
+    }
+
+    &:hover {
+      color: #29abe2;
     }
   }
 }
@@ -47,6 +52,11 @@
     font: normal 1.6rem/1.38 'Roboto', sans-serif;
     resize: none;
     padding: 20px;
+
+    &:focus {
+      box-shadow: 0 0 2px 0px #1ca1f1;
+      border: solid 1px #1ca1f1;
+    }
   }
 
   &__input-container {
@@ -60,6 +70,10 @@
     font: normal 1.6rem/1.38 'Roboto', sans-serif;
     padding: 20px;
     margin-bottom: 20px;
+    &:focus {
+      box-shadow: 0 0 2px 0 #1ca1f1;
+      border: solid 1px #1ca1f1;
+    }
   }
 
   &__submit {
@@ -72,33 +86,42 @@
     background-color: #3AABDF;
     cursor: pointer;
 
+    &:hover {
+      box-shadow: 8px 8px 5px 0px #000a4f;
+    }
+
+    &:active {
+      top: 4px;
+      left: 4px;
+      box-shadow: 4px 4px 5px 0px #000a4f;
+    }
+
     span {
       z-index: 3;
       position: relative;
     }
 
-    &-triangle1 {
+    &-triangle {
       position: absolute;
       height: 100%;
-      width: 43%;
-      //background-color: #2992C6;
-      background-image:
-              linear-gradient(to right top, #2992C6 50%, transparent 50.3%);
-      top: 0;
-      left: 0;
-      z-index: 2;
+
+      &:nth-of-type(1) {
+        width: 43%;
+        background-image:
+                linear-gradient(to right top, #2992C6 50%, transparent 50.3%);
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+      &:nth-of-type(2) {
+        width: 90%;
+        background-image:
+                linear-gradient(to left top, #4BBDF1 50%, transparent 50.3%);
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
     }
 
-    &-triangle2 {
-      position: absolute;
-      height: 100%;
-      width: 90%;
-
-      background-image:
-              linear-gradient(to left top, #4BBDF1 50%, transparent 50.3%);
-      top: 0;
-      right: 0;
-      z-index: 1;
-    }
   }
 }

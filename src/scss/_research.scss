@@ -11,7 +11,7 @@
 	}
 
 	&__title {
-		font-family: "Montserrat";
+		font-family: "Montserrat", sans-serif;
 		font-size: 5.6rem;
 		line-height: 1;
 		font-weight: bold;
@@ -40,12 +40,12 @@
 
 		&:first-of-type {
 			color: #4a90e2;
-			font: bold 2.2rem/1.59 'Montserrat';
+			font: bold 2.2rem/1.59 'Montserrat', sans-serif;
 			margin-bottom: 40px;
 		}
 
 		&:nth-of-type(2) {
-			font: 500 2rem/1.75 'Montserrat';
+			font: 500 2rem/1.75 'Montserrat', sans-serif;
 			color: #fff;
 		}
 	}
@@ -84,7 +84,7 @@
 
 	&__continue-title {
 		color: #4a90e2;
-		font: bold 2.2rem/1.59 'Montserrat';
+		font: bold 2.2rem/1.59 'Montserrat', sans-serif;
 		margin:5rem 0 3rem;
 	}
 

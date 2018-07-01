@@ -1,3 +1,12 @@
+@keyframes bgc-header-btn {
+	50% {
+		background-color: rgba(195,0,115, 0.7);
+	}
+	100% {
+		background-color: rgba(195,0,115, 0);
+	}
+}
+
 .header {
 	$darkBlue: #000427;
 	$pink: #ff0096;
@@ -28,7 +37,7 @@
 	&__logo {
 		display: block;
 		width: 146px;
-		font-family: 'Montserrat';
+		font-family: 'Montserrat', sans-serif;
 		font-size: 26px;
 		line-height: 1.46;
   		font-weight: 800;
@@ -58,30 +67,64 @@
 	}
 
 	&__btn {
-		display: block;
 		width: 198px;
 		height: 38px;
-		background-color:#9d005d;
-		background-image:
-			linear-gradient(-70deg, #710043 6.4%, transparent 6.6%),
-			linear-gradient(to top left, #9d005d 49.5%, transparent 50.5%),
-			linear-gradient(60deg, #ff0096 9.9%, transparent 10.1%),
-			linear-gradient(to bottom, #C70075 99.8%, transparent 100%);
-
-		font-family: 'Roboto';
+		background-color:#C70075;
+		font-family: 'Roboto', sans-serif;
 		font-size: 14px;
 		font-weight: bold;
 		display: flex;
 		justify-content: center;
 		color: white;
 		align-items: center;
+		position: relative;
+
+		span {
+			z-index: 4;
+		}
+
+		&-triangle {
+			position: absolute;
+			height: 100%;
+
+			&:nth-of-type(1) {
+				width: 8%;
+				background-image: linear-gradient(to top left, #710043 49.5%, transparent 50.5%);
+				top: 0;
+				right: 0;
+				z-index: 3;
+			}
+			&:nth-of-type(2) {
+				width: 100%;
+				background-image: linear-gradient(to top left, #9d005d 49.5%, transparent 50.5%);
+				top: 0;
+				right: 0;
+				z-index: 2;
+			}
+			&:nth-of-type(3) {
+				width: 12%;
+				background-image: linear-gradient(to top right, #ff0096 49.5%, transparent 50.5%);
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+		}
+
+		&:hover {
+			background-color: transparent;
+			border: 2px solid #ff0096;
+			animation: bgc-header-btn 5s infinite;
+		}
+
+		&:hover &-triangle {
+			background-image: none;
+		}
 
 		@include media(1200px){
 			font-size: 16px;
 		}
 
 		@include media(998px) {
-			background-image: none;
 			background-color: #c70075;
 		}
 
@@ -109,7 +152,20 @@
 	}
 
 	&__item {
-		align-self: center;
+		margin-top: 5px;
+		&::after{
+			margin-top: 5px;
+			content: "";
+			display: block;
+			width: 0;
+			height: 1px;
+			background-color: #fff;
+			transition: width 0.4s;
+		}
+
+		&:hover:after{
+			width: 100%;
+		}
 	}
 
 	&__reference {
@@ -118,7 +174,7 @@
 		color: white;
 		font-size: 1.5rem;
 		font-weight: 500;
-		font-family: 'Roboto';
+		font-family: 'Roboto', sans-serif;
 
 		@include media(1200px) {
 			font-size: 1.6rem;
