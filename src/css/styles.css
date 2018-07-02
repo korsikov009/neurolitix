@@ -264,11 +264,9 @@ body {
   .menu {
     display: none; } }
 
-.menu__item {
-  margin-top: 5px; }
-
 .menu__item::after {
-  margin-top: 5px;
+  position: relative;
+  top: 5px;
   content: "";
   display: block;
   width: 0;
@@ -316,6 +314,18 @@ body {
   .menu-mobile {
     width: 45px;
     height: 45px; } }
+
+@-webkit-keyframes bgc-prewiew-btn {
+  50% {
+    background-color: rgba(195, 0, 115, 0.7); }
+  100% {
+    background-color: rgba(195, 0, 115, 0); } }
+
+@keyframes bgc-prewiew-btn {
+  50% {
+    background-color: rgba(195, 0, 115, 0.7); }
+  100% {
+    background-color: rgba(195, 0, 115, 0); } }
 
 .preview {
   background-image: -webkit-linear-gradient(top, #000427 80px, transparent 80px), -webkit-linear-gradient(top, #000427 80px, #000a4f 100%);
@@ -992,7 +1002,9 @@ body {
 
 .preview__btn:hover {
   background-color: transparent;
-  border: 2px solid #FA0094; }
+  border: 2px solid #FA0094;
+  -webkit-animation: bgc-header-btn 5s infinite;
+          animation: bgc-header-btn 5s infinite; }
 
 .preview__btn:hover .preview__btn-helper {
   width: 86%;
@@ -1973,14 +1985,14 @@ body {
   cursor: pointer; }
 
 .form__submit:hover {
-  -webkit-box-shadow: 8px 8px 5px 0px #000a4f;
-          box-shadow: 8px 8px 5px 0px #000a4f; }
+  -webkit-box-shadow: 8px 8px 5px 0 #000a4f;
+          box-shadow: 8px 8px 5px 0 #000a4f; }
 
 .form__submit:active {
   top: 4px;
   left: 4px;
-  -webkit-box-shadow: 4px 4px 5px 0px #000a4f;
-          box-shadow: 4px 4px 5px 0px #000a4f; }
+  -webkit-box-shadow: 4px 4px 5px 0 #000a4f;
+          box-shadow: 4px 4px 5px 0 #000a4f; }
 
 .form__submit span {
   z-index: 3;

@@ -1,3 +1,12 @@
+@keyframes bgc-prewiew-btn {
+	50% {
+		background-color: rgba(195,0,115, 0.7);
+	}
+	100% {
+		background-color: rgba(195,0,115, 0);
+	}
+}
+
 .preview {
 	background-image: 
 		linear-gradient(to bottom, #000427 80px, transparent 80px),
@@ -479,6 +488,7 @@
 		&:hover {
 			background-color: transparent;
 			border: 2px solid #FA0094;
+			animation: bgc-header-btn 5s infinite;
 
 		}
 
