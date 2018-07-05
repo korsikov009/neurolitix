@@ -438,6 +438,7 @@
 		transform: skew(-15deg);
 		position: relative;
 		background-color: #C30073;
+		z-index: 100;
 
 		&-helper {
 			position: absolute;
