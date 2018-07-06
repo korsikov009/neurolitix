@@ -16,6 +16,15 @@
     margin-bottom: -8vw;
 	color: white;
 
+	@include media(998px) {
+		padding-top: 20px;
+	}
+
+	@include media(640px) {
+		padding-top: 10px;
+	}
+
+
 	&__container {
 		@extend %container;
 	}
@@ -62,9 +71,12 @@
 			}
 
 			@include media(998px) {
-				@include col_grid(16, 5px, 24);
+				@include col_grid(18, 5px, 24);
 				display: flex;
 				align-self: flex-end;
+			}
+			@include media(820px) {
+				@include col_grid(20, 5px, 24);
 			}
 			@include media(640px) {
 				@include col_grid(20, 5px, 24);
@@ -220,6 +232,10 @@
 			height: 80%;
 			width: 80%;
 			z-index: 0;
+
+			@include media(998px) {
+				top: -8%;
+			}
 		}
 	}
 
@@ -288,13 +304,13 @@
 
 		@include media(998px) {
 			flex-direction: column;
-			padding: 0 4%;
+				padding: 0 2%;
 		}
 		@include media(768px) {
-			padding: 0 4%;
+			padding: 0 2%;
 		}
 		@include media(640px) {
-			padding: 0;
+			padding: 0 2%;
 		}
 	}
 
@@ -330,7 +346,9 @@
 			@include media(768px) {
 				@include col_grid(10, 10px);
 			}
-
+			@include media(640px) {
+				font-size: 2.6rem;
+			}
 		}
 
 		&:nth-of-type(2) {
@@ -351,6 +369,9 @@
 				line-height: 3.7rem;
 				font-weight: 800;
 			}
+			@include media(640px) {
+				font-size: 2.2rem;
+			}
 			@include media(480px) {
 				@include col_grid(9, 10px);
 			}
@@ -370,6 +391,7 @@
 			}
 			@include media(640px) {
 				@include col_grid(8, 10px);
+				font-size: 2.2rem;
 			}
 			@include media(480px) {
 				@include col_grid(9, 10px);
@@ -393,6 +415,9 @@
 			}
 			@include media(768px) {
 				@include col_grid(8, 10px);;
+			}
+			@include media(640px) {
+				font-size: 2.2rem;
 			}
 			@include media(480px) {
 				@include col_grid(9, 10px);
@@ -418,6 +443,9 @@
 			@include media(768px) {
 				@include col_grid(8, 10px);;
 			}
+			@include media(640px) {
+				font-size: 2.2rem;
+			}
 			@include media(480px) {
 				@include col_grid(9, 10px);
 			}
@@ -439,6 +467,23 @@
 		position: relative;
 		background-color: #C30073;
 		z-index: 100;
+
+		@include media(998px) {
+			margin: 100px auto 50px;
+		}
+
+		@include media(768px) {
+			margin: 80px auto 50px;
+		}
+
+		@include media(640px) {
+			margin: 70px auto 40px;
+		}
+
+		@include media(480px) {
+			width: 280px;
+			height: calc(280px / 380 * 80);
+		}
 
 		&-helper {
 			position: absolute;
@@ -502,16 +547,6 @@
 
 		&:hover &-point {
 			display: block;
-		}
-
-		@include media(998px) {
-			margin: 100px auto 50px;
-		}
-
-		@include media(480px) {
-			margin: 100px auto 50px;
-			width: 280px;
-		    height: calc(280px / 380 * 80);
 		}
 	}
 }

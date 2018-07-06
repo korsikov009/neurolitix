@@ -44,10 +44,6 @@
   		color: white;
   		position: relative;
   		word-spacing: 2px;
-  		@include media(480px) {
-			font-size: 22px;
-			width: 130px;
-		}
 	}
 
 	&__logo-point {
@@ -58,12 +54,6 @@
 		position: absolute;
 		top: 16px;
 		right: 17px;
-		@include media(480px) {
-			width: 6px;
-			height: 6px;
-			top: 14px;
-			right: 20px;
-		}
 	}
 
 	&__btn {
@@ -129,11 +119,9 @@
 		}
 
 		@include media(480px) {
-			width: 138px;
-			height: 28px;
-			font-size: 1.4rem;
-		}
-		@include media(359px) {
+			//width: 138px;
+			//height: 28px;
+			//font-size: 1.4rem;
 			display: none;
 		}
 	}
