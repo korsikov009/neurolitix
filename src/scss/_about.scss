@@ -10,6 +10,10 @@
         padding: 100px 0 130px;
     }
 
+    @include media(998px) {
+        padding: 100px 0 110px;
+    }
+
     @include media(640px) {
         padding: 70px 0 70px;
     }
