@@ -4,6 +4,14 @@
   margin-top: -10vw;
   padding-bottom: 120px;
 
+  @include media(998px) {
+    padding-bottom: 100px;
+  }
+
+  @include media(768px) {
+    padding-bottom: 80px;
+  }
+
   &__container {
     @extend %container;
   }
@@ -23,6 +31,30 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+    flex-wrap: wrap;
+
+    @include media(998px) {
+      justify-content: center;
+      margin-bottom: 40px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @include media(700px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    @include media(640px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    @include media(420px) {
+      flex-direction: column;
+    }
   }
 
   &__info-item {
@@ -32,8 +64,34 @@
     align-items: center;
     transition: 0.2s;
 
+    @include media(998px) {
+      margin-bottom: 20px;
+      &:first-of-type {
+        margin-right: 50px;
+      }
+    }
+
+    @include media(700px) {
+      margin-bottom: 30px;
+    }
+
+    @include media(640px) {
+      margin-bottom: 20px;
+      &:first-of-type {
+        margin-right: 30px;
+      }
+    }
+
+    @include media(359px) {
+      font-size: 2.4rem;
+    }
+
     img {
       margin-right: 10px;
+
+      @include media(640px) {
+        display: none;
+      }
     }
 
     &:hover {
@@ -43,15 +101,22 @@
 }
 
 .form {
-  @include row_grid(20px);
+  @include row_grid(24px);
 
   &__textarea {
-    @include col_grid(8, 20px);
+    @include col_grid(8, 24px);
     border: solid 1px #9faac2;
     color: #4a4a4a;
     font: normal 1.6rem/1.38 'Roboto', sans-serif;
     resize: none;
     padding: 20px;
+
+    @include media(998px) {
+      font-size: 2rem;
+      @include col_grid(12, 24px);
+      height: 300px;
+      margin-bottom: 20px;
+    }
 
     &:focus {
       box-shadow: 0 0 2px 0px #1ca1f1;
@@ -60,7 +125,11 @@
   }
 
   &__input-container {
-    @include col_grid(4, 20px);
+    @include col_grid(4, 24px);
+
+    @include media(998px) {
+      @include col_grid(12, 24px);
+    }
   }
 
   &__text {
@@ -70,6 +139,11 @@
     font: normal 1.6rem/1.38 'Roboto', sans-serif;
     padding: 20px;
     margin-bottom: 20px;
+
+    @include media(998px) {
+      font-size: 2rem;
+    }
+
     &:focus {
       box-shadow: 0 0 2px 0 #1ca1f1;
       border: solid 1px #1ca1f1;
@@ -86,14 +160,27 @@
     background-color: #3AABDF;
     cursor: pointer;
 
+    @include media(998px) {
+      font-size: 2.4rem;
+    }
+
     &:hover {
       box-shadow: 8px 8px 5px 0 #000a4f;
+      @include media(998px) {
+        box-shadow: none;
+      }
     }
 
     &:active {
       top: 4px;
       left: 4px;
       box-shadow: 4px 4px 5px 0 #000a4f;
+      @include media(998px) {
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        opacity: 0.8;
+      }
     }
 
     span {
