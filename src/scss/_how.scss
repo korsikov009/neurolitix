@@ -80,13 +80,6 @@
   &__flex-container{
     @include row_grid (24px);
 
-    //@include media(998px) {
-    //  justify-content: center;
-    //  flex-direction: column;
-    //  align-items: center;
-    //  @include row_grid (0px);
-    //}
-
     @include media(998px) {
       @include row_grid (10px);
     }
