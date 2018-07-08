@@ -68,8 +68,13 @@
         z-index: 100;
         text-align: center;
         margin: 5px 0 50px;
+
         @include media(768px) {
             margin: 0;
+        }
+
+        @include media(480px) {
+            font-size: 4.5rem;
         }
     }
     
@@ -140,6 +145,10 @@
             background-image: linear-gradient(to right top, #0f1b7d 49.8%, transparent 50.2%);
             top: -12vw;
             left: 0;
+
+            @include media(480px) {
+                width: 50%;
+            }
         }
 
         &:nth-of-type(3) {
@@ -150,6 +159,9 @@
             transform: skew(60deg, 0);
             top: -7vw;
             left: -4%;
+            @include media(480px) {
+                width: 50%;
+            }
         }
 
         &:nth-of-type(4) {
@@ -160,6 +172,9 @@
             left: 10%;
             opacity: 0.41;
             transform: skew(65deg, 0);
+            @include media(480px) {
+                width: 50%;
+            }
         }
 
         &:nth-of-type(5) {
@@ -169,13 +184,16 @@
             right: -35%;
             background-image: linear-gradient(to bottom left, #0f1b7d 49.8%, transparent 50.2%);
             z-index: 2;
+
+            @include media(480px) {
+                width: 70%;
+            }
         }
 
         &-in {
             position: absolute;
             width: 28%;
             height: 18vw;
-            //background-color: rgba(0, 92, 192, 0.73);
             background-image: linear-gradient(to bottom left, rgba(0, 92, 192, 0.73) 49.9%, transparent 50%);
             opacity: 0.61;
             top: 0;
@@ -192,6 +210,10 @@
             bottom: 0;
             left:-8%;
             transform:skew(60deg, 0);
+
+            @include media(480px) {
+                width: 30%;
+            }
         }
 
         &:nth-of-type(7) {
@@ -201,6 +223,10 @@
             opacity: 0.61;
             bottom: 0;
             left:-40%;
+
+            @include media(480px) {
+                width: 50%;
+            }
         }
 
         &:nth-of-type(8) {
@@ -212,6 +238,10 @@
             right: 19.5%;
             transform: skew(60deg, 0);
             z-index: 2;
+
+            @include media(480px) {
+                width: 50%;
+            }
         }
 
         &:nth-of-type(9) {
@@ -220,6 +250,10 @@
             background-image: linear-gradient(to bottom left, #0f1b7d 49.7%, transparent 50.3%);
             bottom: -10vw;
             right: 0;
+
+            @include media(480px) {
+                width: 55%;
+            }
         }
     }
 }

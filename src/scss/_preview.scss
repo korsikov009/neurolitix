@@ -82,7 +82,7 @@
 				@include col_grid(20, 5px, 24);
 			}
 			@include media(480px) {
-				@include col_grid(22, 5px, 24);
+				@include col_grid(24, 5px, 24);
 			}
 		}
 		z-index: 10;

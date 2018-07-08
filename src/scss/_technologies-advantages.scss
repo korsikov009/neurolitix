@@ -29,6 +29,10 @@
     @include media(768px) {
       margin: 70px 0 30px;
     }
+
+    @include media(480px) {
+      font-size: 4.5rem;
+    }
   }
 
   &__flex-wrapper {

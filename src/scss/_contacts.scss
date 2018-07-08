@@ -25,6 +25,10 @@
     z-index: 100;
     text-align: center;
     margin: 70px 0 50px;
+
+    @include media(480px) {
+      font-size: 4.5rem;
+    }
   }
 
   &__info {
@@ -118,6 +122,11 @@
       margin-bottom: 20px;
     }
 
+    @include media(480px) {
+      height: 200px;
+      padding: 20px 15px;
+    }
+
     &:focus {
       box-shadow: 0 0 2px 0px #1ca1f1;
       border: solid 1px #1ca1f1;
@@ -142,6 +151,10 @@
 
     @include media(998px) {
       font-size: 2rem;
+    }
+
+    @include media(480px) {
+      padding: 20px 15px;
     }
 
     &:focus {

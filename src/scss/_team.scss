@@ -30,7 +30,6 @@
     width: 16%;
     height: 100%;
     background-color: #fff;
-    //border-bottom: solid 1px #9faac2;
     @include media (640px) {
       left: -199px;
       width: 200px;
@@ -71,6 +70,10 @@
 
     @include media(640px) {
       margin: 0 0 30px;
+    }
+
+    @include media(480px) {
+      font-size: 4.5rem;
     }
   }
 
@@ -121,6 +124,10 @@
       background-image: linear-gradient(to right top, #0f1b7d 49.8%, transparent 50.2%);
       top: -12vw;
       left: 0;
+
+      @include media(480px) {
+        width: 70%;
+      }
     }
 
     &:nth-of-type(3) {
@@ -131,6 +138,10 @@
       transform: skew(60deg, 0);
       top: -7vw;
       left: -4%;
+
+      @include media(480px) {
+        width: 70%;
+      }
     }
 
     &:nth-of-type(4) {
@@ -141,22 +152,29 @@
       left: 10%;
       opacity: 0.41;
       transform: skew(65deg, 0);
+
+      @include media(480px) {
+        width: 70%;
+      }
     }
 
     &:nth-of-type(5) {
       width: 80%;
       height: 13vw;
       top: 0;
-      right: -35%;
+      right: -50%;
       background-image: linear-gradient(to bottom left, #0f1b7d 49.8%, transparent 50.2%);
       z-index: 2;
+
+      @include media(480px) {
+        width: 65%;
+      }
     }
 
     &-in {
       position: absolute;
       width: 28%;
       height: 18vw;
-      //background-color: rgba(0, 92, 192, 0.73);
       background-image: linear-gradient(to bottom left, rgba(0, 92, 192, 0.73) 49.9%, transparent 50%);
       opacity: 0.61;
       top: 0;
@@ -174,6 +192,11 @@
       bottom: 0;
       left:-8%;
       transform:skew(60deg, 0);
+
+      @include media(480px) {
+        width: 30%;
+        left: -20%;
+      }
     }
 
     &:nth-of-type(7) {
@@ -182,7 +205,12 @@
       background-image: linear-gradient(to top right, rgba(0, 92, 192, 0.73) 49.9%, transparent 50%);
       opacity: 0.61;
       bottom: 0;
-      left:-40%;
+      left:-50%;
+
+      @include media(480px) {
+        width: 50%;
+        height: 12vw;
+      }
     }
 
     &:nth-of-type(8) {
@@ -194,6 +222,10 @@
       right: 19.5%;
       transform: skew(60deg, 0);
       z-index: 2;
+
+      @include media(480px) {
+        width: 62.2%;
+      }
     }
 
     &:nth-of-type(9) {
@@ -204,6 +236,11 @@
       bottom: -10vw;
       right: 0;
       z-index: 1;
+      @include media(480px) {
+        width: 67%;
+        height: 15vw;
+        bottom: -15vw;
+      }
     }
   }
 }
