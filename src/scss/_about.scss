@@ -118,10 +118,6 @@
             font: bold 2.2rem/1.59 'Montserrat', sans-serif;
             padding-top: 1rem;
 
-            @include media(1200px) {
-                font-size: 2rem;
-                line-height: 3.5rem;
-            }
             @include media(998px) {
                 font-size: 2.4rem;
                 line-height: 4rem;

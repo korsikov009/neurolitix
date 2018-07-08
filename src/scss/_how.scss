@@ -10,8 +10,16 @@
     padding: 100px 0 130px;
   }
 
+  @include media(998px) {
+    padding: 100px 0 110px;
+  }
+
+  @include media(640px) {
+    padding: 70px 0 70px;
+  }
+
   @include media(480px) {
-    padding: 80px 0 90px;
+    padding: 60px 0 60px;
   }
 
   &::before {
@@ -59,32 +67,48 @@
     z-index: 100;
     text-align: center;
     margin: 20px 0 50px;
+
+    @include media(768px) {
+      margin: 20px 0 30px;
+    }
+
+    @include media(640px) {
+      margin: 20px 0 20px;
+    }
   }
 
   &__flex-container{
-    @include row_grid (25px);
-    @include media(1200px) {
-      justify-content: center;
-    }
+    @include row_grid (24px);
+
+    //@include media(998px) {
+    //  justify-content: center;
+    //  flex-direction: column;
+    //  align-items: center;
+    //  @include row_grid (0px);
+    //}
+
     @include media(998px) {
-      flex-direction: column;
-      align-items: center;
+      @include row_grid (10px);
+    }
+
+    @include media(640px) {
       @include row_grid (0px);
     }
   }
 
   &__flex-item {
-    @include col_grid(4, 25px);
+    @include col_grid(4, 24px);
 
     margin-bottom: 25px;
 
-    @include media(1200px) {
-      @include col_grid(4, 20px);
-    }
     @include media(998px) {
-      @include col_grid(12, 10px);
+      @include col_grid(6, 10px);
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    @include media(640px) {
+      @include col_grid(12, 0px);
     }
 
     &-title {
@@ -99,23 +123,25 @@
       color: #4a4a4a;
       @include media(998px) {
         font-size: 2rem;
-        line-height: 2.8rem;
+        line-height: 1.4;
       }
     }
 
     &:first-of-type {
-      @include col_grid(8, 25px);
+      @include col_grid(8, 24px);
       color: #4a90e2;
       font: bold 2.2rem/1.59 'Montserrat', sans-serif;
       padding-top: 1rem;
 
-      @include media(1200px) {
-        font-size: 2rem;
-        line-height: 3.5rem;
-      }
       @include media(998px) {
+        @include col_grid(12, 10px);
         font-size: 2.4rem;
         line-height: 4rem;
+        padding-top: 0;
+      }
+
+      @include media(640px) {
+        @include col_grid(12, 0px);
       }
     }
   }

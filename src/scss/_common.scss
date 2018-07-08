@@ -31,9 +31,14 @@ body {
 	}
 
 	@include media(640px) {
-		padding: 0 16px;
+		padding: 0 20px;
 	}
+
 	@include media(480px) {
 		padding: 0 16px;
+	}
+
+	@include media(359px) {
+		padding: 0 12px;
 	}
 }
