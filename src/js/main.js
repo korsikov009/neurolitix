@@ -1,0 +1,1 @@
+toShowTheMenu('menu-mobile__btn', 'menu-mobile','menu-mobile__btn_activity_active' ,'menu-mobile_visibility_visible');
