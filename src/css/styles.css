@@ -298,6 +298,7 @@ body {
     font-size: 1.6rem; } }
 
 .menu-mobile {
+  display: none;
   position: absolute;
   top: 80px;
   right: -500px;
@@ -307,6 +308,10 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
+
+@media only screen and (max-width: 998px) {
+  .menu-mobile {
+    display: block; } }
 
 @media only screen and (max-width: 768px) {
   .menu-mobile {
@@ -1700,7 +1705,7 @@ body {
 
 @media only screen and (max-width: 359px) {
   .research__float-item {
-    width: 49%; } }
+    width: 40%; } }
 
 .research__separator {
   margin: 20px 0 0;
