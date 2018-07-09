@@ -354,10 +354,10 @@ body {
   opacity: 1; }
 
 .menu-mobile__btn .qwerty {
-  top: 20%;
-  left: 20%;
-  width: 60%;
-  height: 60%;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
   position: absolute;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -3200,6 +3200,11 @@ body {
   top: 0;
   right: 0;
   z-index: 1; }
+
+.bad-field {
+  -webkit-box-shadow: 0 0 2px 0 #d0021b;
+          box-shadow: 0 0 2px 0 #d0021b;
+  border: solid 1px #d0021b; }
 
 .footer {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#000a4f), to(#000427));

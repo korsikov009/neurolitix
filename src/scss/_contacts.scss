@@ -222,6 +222,10 @@
         z-index: 1;
       }
     }
-
   }
+}
+
+.bad-field {
+  box-shadow: 0 0 2px 0 #d0021b;
+  border: solid 1px #d0021b;
 }

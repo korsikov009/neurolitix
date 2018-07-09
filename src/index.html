@@ -461,12 +461,12 @@
 				<a href="#" class="contacts__info-item"><img src="img/icons/letter.svg" alt="letter">info@neurolitix.ru</a>
 				<a href="#" class="contacts__info-item"><img src="img/icons/marker.svg" alt="marker">Москва, <br>Тверская-Ямская, 12</a>
 			</div>
-			<form action="" class="contacts__form form">
-				<textarea class="form__textarea" placeholder="Введите текст сообщения"></textarea>
+			<form action="" class="contacts__form form" id="form">
+				<textarea class="form__textarea" id="form__textarea" placeholder="Введите текст сообщения" data-require="required"></textarea>
 				<div class="form__input-container">
-					<input class="form__text" type="text" placeholder="Имя">
-					<input class="form__text" type="text" placeholder="Эл. почта">
-					<button class="form__submit">
+					<input class="form__text" id="form__name" type="text" placeholder="Имя" data-require="required">
+					<input class="form__text" id="form__email" type="text" placeholder="Эл. почта" data-require="required">
+					<button class="form__submit" id="form__submit">
 						<span>Отправить</span>
 						<div class="form__submit-triangle"></div>
 						<div class="form__submit-triangle"></div>
