@@ -76,7 +76,6 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
     .pipe(gulp.dest('build/js'))
 
     var buildLibs = gulp.src('src/libs/**/*')
-    .pipe(uglify())
     .pipe(gulp.dest('build/libs'))
 
     var buildHtml = gulp.src('src/**/*.html')
