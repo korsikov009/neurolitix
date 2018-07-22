@@ -1297,6 +1297,10 @@ body {
   position: relative;
   z-index: 10; }
 
+.about__anchor {
+  position: relative;
+  top: -100px; }
+
 .about__title {
   font-family: "Montserrat", sans-serif;
   font-size: 5.6rem;
@@ -1567,6 +1571,10 @@ body {
   margin-top: -8vw;
   padding-bottom: 19vw;
   margin-bottom: -8vw; }
+
+.research__anchor {
+  position: relative;
+  top: -100px; }
 
 .research__title {
   font-family: "Montserrat", sans-serif;
@@ -2067,6 +2075,10 @@ body {
           transform: rotate(-8deg);
   position: relative;
   z-index: 10; }
+
+.how__anchor {
+  position: relative;
+  top: -100px; }
 
 .how__title {
   font-family: "Montserrat", sans-serif;
@@ -2698,6 +2710,10 @@ body {
   position: relative;
   z-index: 10; }
 
+.team__anchor {
+  position: relative;
+  top: -100px; }
+
 .team__title {
   font-family: "Montserrat", sans-serif;
   font-size: 5.6rem;
@@ -2943,6 +2959,10 @@ body {
 @media only screen and (max-width: 768px) {
   .contacts {
     padding-bottom: 80px; } }
+
+.contacts__anchor {
+  position: relative;
+  top: -100px; }
 
 .contacts__title {
   font-family: "Montserrat", sans-serif;

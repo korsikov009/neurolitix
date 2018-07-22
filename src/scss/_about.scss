@@ -58,6 +58,11 @@
     z-index: 10;
   }
 
+  &__anchor {
+    position: relative;
+    top: -100px;
+  }
+
   &__title {
     font-family: "Montserrat", sans-serif;
     font-size: 5.6rem;
