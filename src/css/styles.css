@@ -1301,6 +1301,10 @@ body {
   position: relative;
   top: -100px; }
 
+@media only screen and (max-width: 998px) {
+  .about__anchor {
+    top: -20px; } }
+
 .about__title {
   font-family: "Montserrat", sans-serif;
   font-size: 5.6rem;
@@ -1575,6 +1579,10 @@ body {
 .research__anchor {
   position: relative;
   top: -100px; }
+
+@media only screen and (max-width: 998px) {
+  .research__anchor {
+    top: -20px; } }
 
 .research__title {
   font-family: "Montserrat", sans-serif;
@@ -2079,6 +2087,10 @@ body {
 .how__anchor {
   position: relative;
   top: -100px; }
+
+@media only screen and (max-width: 998px) {
+  .how__anchor {
+    top: -20px; } }
 
 .how__title {
   font-family: "Montserrat", sans-serif;
@@ -2714,6 +2726,10 @@ body {
   position: relative;
   top: -100px; }
 
+@media only screen and (max-width: 998px) {
+  .team__anchor {
+    top: -20px; } }
+
 .team__title {
   font-family: "Montserrat", sans-serif;
   font-size: 5.6rem;
@@ -2963,6 +2979,10 @@ body {
 .contacts__anchor {
   position: relative;
   top: -100px; }
+
+@media only screen and (max-width: 998px) {
+  .contacts__anchor {
+    top: -20px; } }
 
 .contacts__title {
   font-family: "Montserrat", sans-serif;
